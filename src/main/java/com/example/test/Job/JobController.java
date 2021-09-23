@@ -14,8 +14,8 @@ public class JobController {
         String uri = "http://dev3.dansmultipro.co.id/api/recruitment/positions/" + id;
 
         // call API
-        RestTemplate test = new RestTemplate();
-        Job job = test.getForObject(uri, Job.class);
+        RestTemplate restTemplate = new RestTemplate();
+        Job job = restTemplate.getForObject(uri, Job.class);
 
         return job;
     }
@@ -25,8 +25,8 @@ public class JobController {
         String uri = "http://dev3.dansmultipro.co.id/api/recruitment/positions.json";
 
         // call API
-        RestTemplate test = new RestTemplate();
-        ResponseEntity<Job[]> response = test.getForEntity(uri, Job[].class);
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<Job[]> response = restTemplate.getForEntity(uri, Job[].class);
         Job[] job = response.getBody();
 
         return job;
