@@ -29,11 +29,11 @@ public class Job {
         this.company_logo = company_logo;
     }
 
-    public String getCompanyLogo() {
+    public String getCompany_logo() {
         return company_logo;
     }
 
-    public String getHowToApply() {
+    public String getHow_to_apply() {
         return how_to_apply;
     }
 
@@ -49,7 +49,7 @@ public class Job {
         return location;
     }
 
-    public String getCompanyUrl() {
+    public String getCompany_url() {
         return company_url;
     }
 
